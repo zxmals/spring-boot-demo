@@ -25,7 +25,7 @@ public class AreaDaoTest extends TestCase {
 	@Test
 	public void testQueryArea() {
 		List<Area> areaList = areaDao.QueryArea();
-		assertEquals(3, areaList.size());
+		assertEquals(2, areaList.size());
 	}
 
 	@Test
@@ -34,8 +34,8 @@ public class AreaDaoTest extends TestCase {
 		assertEquals("东苑", area.getArea_name());
 	}
 
-	// @Test
-	@Ignore
+	@Test
+	//@Ignore
 	public void testInertArea() {
 		Area area = new Area();
 		area.setArea_name("南苑");
